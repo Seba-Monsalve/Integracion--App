@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Red Social Inacap</string>
+    <string name="msg_welcome">Bienvenidos a la red social de Inacap</string>
+    <string name="usuario">usuario</string>
+    <string name="contraseña">contraseña</string>
+    <string name="repetir_contraseña">repetir contraseña</string>
+    <string name="ingresar">ingresar</string>
+    <string name="olvidoContrasena">¿Olvidó su contraseña?</string>
+    <string name="registrate">Registrate</string>
+    <string name="desc_icono_perfil">icono perfil</string>
+    <string name="apodo">nombre</string>
+    <string name="email">email</string>
+    <string name="title_activity_home">Home</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="calificar">Calificar</string>
+    <string name="user">Usuario</string>
+    <string name="publicacion">PUBLICACION</string>
+</resources>

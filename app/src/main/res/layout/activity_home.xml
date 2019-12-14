@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar_top_inferior"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgRamos"
+        android:layout_width="110dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:baselineAlignBottom="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbMenuTopInterior"
+        app:srcCompat="@drawable/img_ramos" />
+
+    <TextView
+        android:id="@+id/tvRamos"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Ramos"
+        app:layout_constraintEnd_toEndOf="@+id/imgRamos"
+        app:layout_constraintStart_toStartOf="@+id/imgRamos"
+        app:layout_constraintTop_toBottomOf="@+id/imgRamos" />
+
+    <ImageView
+        android:id="@+id/imgRestaurantes"
+        android:layout_width="110dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:baselineAlignBottom="true"
+        app:layout_constraintBaseline_toBaselineOf="@+id/imgRamos"
+        app:layout_constraintEnd_toStartOf="@+id/imgProfesores"
+        app:layout_constraintStart_toEndOf="@+id/imgRamos"
+        app:srcCompat="@drawable/img_restaurant" />
+
+    <TextView
+        android:id="@+id/tvRestaurantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Restaurantes"
+        app:layout_constraintEnd_toEndOf="@+id/imgRestaurantes"
+        app:layout_constraintStart_toStartOf="@+id/imgRestaurantes"
+        app:layout_constraintTop_toBottomOf="@+id/imgRestaurantes" />
+
+    <ImageView
+        android:id="@+id/imgProfesores"
+        android:layout_width="110dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="8dp"
+        android:baselineAlignBottom="true"
+        app:layout_constraintBaseline_toBaselineOf="@+id/imgRestaurantes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/img_profes" />
+
+    <TextView
+        android:id="@+id/tvProfesores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Profesores"
+        app:layout_constraintEnd_toEndOf="@+id/imgProfesores"
+        app:layout_constraintStart_toStartOf="@+id/imgProfesores"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfesores" />
+
+    <View
+        android:id="@+id/dividerTop"
+        android:layout_width="395dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRestaurantes" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabNewComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cross_more" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        app:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="@color/colorPrimary"
+        app:srcCompat="@android:drawable/ic_popup_sync" />
+
+    <ListView
+        android:id="@+id/lv_publicacion"
+        android:layout_width="match_parent"
+        android:layout_height="731dp"
+        android:layout_marginBottom="-20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividerTop"
+        app:layout_constraintVertical_bias="0.0">
+
+    </ListView>
+
+
+</android.support.constraint.ConstraintLayout>

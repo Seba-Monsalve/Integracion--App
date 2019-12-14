@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <view
+        android:id="@+id/vwContainer"
+        class="android.support.v4.view.ViewPager"
+        android:layout_width="0dp"
+        android:layout_height="204dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spSeccion" />
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tbToolbar"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:background="@color/gris_background"
+        app:layout_constraintEnd_toEndOf="@+id/vwContainer"
+        app:layout_constraintStart_toStartOf="@+id/vwContainer"
+        app:layout_constraintTop_toTopOf="@+id/vwContainer" />
+
+    <TextView
+        android:id="@+id/tvNameUser1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Tomacito"
+        android:textColor="@color/primario"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tbToolbar"
+        app:layout_constraintStart_toStartOf="@+id/tbToolbar"
+        app:layout_constraintTop_toTopOf="@+id/tbToolbar" />
+
+    <TextView
+        android:id="@+id/tvTitleContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Titulo"
+        android:textColor="@color/gris_texto"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/vwContainer"
+        app:layout_constraintTop_toBottomOf="@+id/tbToolbar" />
+
+    <TextView
+        android:id="@+id/tvContentComment"
+        android:layout_width="0dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. "
+        android:textColor="@color/gris_texto"
+        app:layout_constraintEnd_toEndOf="@+id/vwContainer"
+        app:layout_constraintStart_toStartOf="@+id/vwContainer"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleContent"
+        tools:text="@tools:sample/lorem/random" />
+
+    <View
+        android:id="@+id/dividerComent"
+        android:layout_width="395dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="18dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="@+id/vwContainer"
+        app:layout_constraintStart_toStartOf="@+id/vwContainer"
+        app:layout_constraintTop_toBottomOf="@+id/tvContentComment" />
+
+    <TextView
+        android:id="@+id/tvCountLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="123"
+        app:layout_constraintBottom_toBottomOf="@+id/iBtnLike"
+        app:layout_constraintStart_toEndOf="@+id/iBtnLike"
+        app:layout_constraintTop_toTopOf="@+id/iBtnLike" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="30"
+        app:layout_constraintBottom_toBottomOf="@+id/iBtnDislike"
+        app:layout_constraintStart_toEndOf="@+id/iBtnDislike"
+        app:layout_constraintTop_toTopOf="@+id/iBtnDislike" />
+
+    <ImageButton
+        android:id="@+id/iBtnDislike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="113dp"
+        android:background="@null"
+        android:baselineAlignBottom="true"
+        app:layout_constraintEnd_toEndOf="@+id/vwContainer"
+        app:layout_constraintTop_toBottomOf="@+id/dividerComent"
+        app:srcCompat="@drawable/img_dislike" />
+
+    <ImageButton
+        android:id="@+id/iBtnLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:baselineAlignBottom="true"
+        app:layout_constraintBaseline_toBaselineOf="@+id/iBtnDislike"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:srcCompat="@drawable/img_like" />
+
+</android.support.constraint.ConstraintLayout>

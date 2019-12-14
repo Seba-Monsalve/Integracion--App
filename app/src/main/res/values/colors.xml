@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="blanco">#FFF</color>
+    <color name="gris_hint">#CCC</color>
+    <color name="primario">#570000</color>
+    <color name="secundario">#F74343</color>
+    <color name="gris_texto">#939598</color>
+    <color name="gris_texto_disabled">#CCCCCC</color>
+    <color name="verde_aprobado">#5CF246</color>
+    <color name="gris_background">#F1F2F2</color>
+    <color name="gris_background2">#E6E7E8</color>
+    <color name="rojo">#F74343</color>
+    <color name="verde">#5CF246</color>
+</resources>
